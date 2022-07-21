@@ -172,6 +172,96 @@ body{
 
 /*! End Home Page */
 
+/* Menu Categories Page */
+
+.category-tile{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-tile + div{
+    margin-bottom: 50px;
+}
+
+/* End of Menu Categories Page */
+
+/* Single Category Page */
+
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+    width: 80%;
+}
+
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+
+.menu-item-tile .menu-item-price span{
+    font-size: .6em;
+}
+
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.menu-item-photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+
+.menu-item-description{
+    padding-right: 30px;
+}
+
+h3.menu-item-tile{
+    margin: 0 0 10px;
+}
+
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
+    text-align: justify; /* Not from Coursera,, but feels nice the text justified */
+}
+
+/* End of Single Category Page */
 /****** Large devices only ********/
 @media (min-width:1200px){
     /* Home Page */
@@ -288,6 +378,22 @@ body{
         margin: 0 auto 15px;
     }
     /* End Home Page */
+
+    /* Single Category Page */
+
+    .menu-item-photo{
+        margin-right: auto;
+    }
+
+    .menu-item-tile .menu-item-priice{
+        text-align: center;
+    }
+
+    .menu-item-description{
+        text-align: center;
+    }
+
+    /* End of Single Category Page */
 }
 
 /****** Super extra small devices only (Probably useless *******/
@@ -305,4 +411,17 @@ body{
         margin: 0 auto 15px;
     }
     /* End Home Page */
+
+    /* Menu Categories Page */
+
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+
+    /* End of Menu Categories Page */
 }
